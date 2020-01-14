@@ -11,7 +11,7 @@ heroku = Heroku(app)
 
 basedir = os.path.abspath(os.path.dirname(__file__))
 # app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///" + os.path.join(basedir, "app.sqlite")
-app.config["DATABASE_URL"] = "postgres://rmlpgvpgjxibvc:b8162dc10c9922aa8fc1113823ee5ed8ef84006bd67e4c6a04791d5e336316f6@ec2-3-220-86-239.compute-1.amazonaws.com:5432/ddc7gss443hcnh"
+DATABASE_URL = "postgres://rmlpgvpgjxibvc:b8162dc10c9922aa8fc1113823ee5ed8ef84006bd67e4c6a04791d5e336316f6@ec2-3-220-86-239.compute-1.amazonaws.com:5432/ddc7gss443hcnh"
 
 db = SQLAlchemy(app)
 ma = Marshmallow(app)
